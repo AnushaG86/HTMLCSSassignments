@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            header{
+                font-size: 200%;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: center;
+            }
+            h2{
+                font-family: cursive;
+                font-size: 150%;
+                text-align: left;
+            }
+            #PERSONALINFO{
+                text-align:center;
+                margin-left: 20%;
+                margin-right: 20%;
+                border-collapse: collapse;
+                border-style: solid;
+            }
+            body{
+                background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8v3XkZsSWKBnakQ1xjHvRfCb0KrufKzu2Ew&usqp=CAU);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            #hobbies{
+                text-align:center;
+            }
+        </style>
+        <title>SURVEY FORMS</title>
+    </head>
+    <body>
+        <header>PERSONAL INFORMATION</header>
+        <h2>Help us get to know more about you:)</h2>
+        <div id="PERSONALINFO">
+            <br><label id="Fname">First Name:</label>
+            <input type="text" id="Fname" required><br><br>
+            <label id="Lname">Last Name:</label>
+            <input type="text" id="Lname"><br><br>
+            <label id="DOB">Date Of Birth:</label>
+            <input type="date" id="DOB" required><br><br>
+            <label id="gender" >Gender:</label>
+            <input type="radio" id="gender" name="gender" value="Male">Male
+            <input type="radio" id="gender" name="gender" value="Female">Female
+            <input type="radio" id="gender" name="gender" value="Others">Others<br><br>
+            <label id="email">Email ID:</label>
+            <input type="email" id="email"><br><br>
+            <label id="Phonenum">Phone Number:</label>
+            <input type="number" id="Phonenum"><br><br>
+            <label id="Hobbies">Hobbies(Check all your favorite hobbies):</label><br>
+            <div id="hobbies">
+                <input type="checkbox" id="Hobbies" value="Cook">Cooking<br>
+                <input type="checkbox" id="Hobbies" value="Paint">Painting/Drawing<br>
+                <input type="checkbox" id="Hobbies" value="Sing">Singing<br>
+                <input type="checkbox" id="Hobbies" value="Travel">Travelling<br>
+                <input type="checkbox" id="Hobbies" value="Novel">NovelReading<br><br>
+            </div>
+            <label id="Education">Education level</label>
+            <select id="Education">
+                <option value="L1">10th STD</option>
+                <option value="L2">12th STD</option>
+                <option value="L3">UG</option>
+                <option value="L4">PG</option>
+                <option value="L5">PHD</option>
+            </select><br><br>
+            <label id="comments">Tell about yourself:</label>
+            <textarea id="comments" cols="40" rows="10" placeholder="enter here"></textarea><br><br>
+            <input type="submit" value="SUBMIT FORM" style="background-color: rgb(46, 189, 46);">
+        </div>
+        
+
+    </body>
+</html>
